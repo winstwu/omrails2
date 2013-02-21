@@ -69,12 +69,20 @@ Omrails2::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   #S3 image hosting via Paperclip
+  # config.paperclip_defaults = {
+  #   :storage => :s3,
+  #   :s3_credentials => {
+  #     :bucket => S3[:bucket],
+  #     :access_key_id => S3[:key],
+  #     :secret_access_key => S3[:secret]
+  #   }
+  # }
   config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => S3[:bucket],
-    :access_key_id => S3[:key],
-    :secret_access_key => S3[:secret]
-  }
-}
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  } 
 end
