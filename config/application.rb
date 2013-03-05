@@ -63,3 +63,5 @@ module Omrails2
     config.assets.initialize_on_precompile = false
   end
 end
+# config/application.rb
+config.assets.precompile += %w( active_admin.css active_admin.js active_admin/print.css )
