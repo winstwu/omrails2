@@ -7,6 +7,8 @@ gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem "aws-s3", :require => "aws/s3"
+gem "will_paginate", "~> 3.0.4"
+gem 'activeadmin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
