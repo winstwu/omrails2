@@ -61,7 +61,8 @@ module Omrails2
 
     # Required for Devise on Heroku
     config.assets.initialize_on_precompile = false
+    
+    # config/application.rb
+    config.assets.precompile += %w( active_admin.css active_admin.js active_admin/print.css )
   end
 end
-# config/application.rb
-config.assets.precompile += %w( active_admin.css active_admin.js active_admin/print.css )
