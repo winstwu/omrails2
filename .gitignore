@@ -19,8 +19,8 @@ doc/
 .project
 .DS_Store
 .idea
+/sampleimages/
 
 # Ignore Paperclip uploaded files
 /public/system
-
 /config/s3.yml

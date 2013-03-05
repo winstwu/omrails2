@@ -5,3 +5,4 @@
 jQuery ->
 	$('#pins').images.Loaded ->
 		$('#pins').masonry itemSelector: ".box"
+

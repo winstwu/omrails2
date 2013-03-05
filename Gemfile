@@ -13,6 +13,7 @@ gem "aws-s3", :require => "aws/s3"
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'faker'
 end
 
 group :production do
