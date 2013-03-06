@@ -25,31 +25,50 @@ body{
     }
 }
 
-/* Required for jQuery Masonry */
+
+/*Used by jQuery Masonry for "pinterest style" self-adjusting image block layout */
+
 .box {
-	margin: 5px;
-	padding: 5px;
-	font-size: 11px;
-	float: left;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 10px #444;
-	width: 214px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 11px;
+  color: #000;
+  line-height: 1.4em;
+  float: left;
+  background-color: grayLight;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #444;
+  width: 214px;
 }
 
-.box img{
-	display: block;
-	width: 100%;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+.box img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
-.description{
-	margin: 10px 0 5px;
+.box a {
+  color: #666;
+  text-decoration: underline;
+  padding-left: 2px;
 }
 
-.pagination {
-	margin: auto;
+.box a:hover{
+  color: #333;
 }
+
+.description {
+  margin: 10px 0px 5px;
+  color: #000;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
