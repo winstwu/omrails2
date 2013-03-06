@@ -8,7 +8,7 @@ gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem "aws-s3", :require => "aws/s3"
 gem "will_paginate", "~> 3.0.4"
-gem 'activeadmin'
+gem "activeadmin", :git => "git://github.com/gregbell/active_admin.git"
 gem "formtastic", "~> 2.1.1"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
