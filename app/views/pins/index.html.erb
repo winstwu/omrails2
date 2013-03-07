@@ -2,8 +2,9 @@
 	<%= render 'pages/home' %>
 <% else %>
 <% end %>
-
+<%= will_paginate @pins %>
 <div id="pins">
     <%= render @pins %>
 </div>
+
 

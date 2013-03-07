@@ -1,7 +1,7 @@
 <strong>
 	Posted by <%= @user.name %>
 </strong>
-
+<%= will_paginate @pins %>
 <div id="pins">
     <%= render @pins %>
 </div>
